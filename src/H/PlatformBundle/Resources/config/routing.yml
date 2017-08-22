@@ -1,0 +1,38 @@
+# accueil
+h_platform_home:
+    path:     /
+    defaults:
+       _controller: HPlatformBundle:Event:index
+# liste
+h_platform_list:
+    path:      /events/{page}
+    defaults:
+        _controller: HPlatformBundle:Event:liste
+    requirements:
+        page: \d*
+# info event
+h_platform_view:
+    path:      /events/info/{id}
+    defaults:
+        _controller: HPlatformBundle:Event:view
+    requirements:
+        id: \d+
+# add event
+h_platform_add:
+    path:      /add
+    defaults:
+       _controller: HPlatformBundle:Event:add
+# edit event
+h_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: HPlatformBundle:Event:edit
+    requirements:
+        id: \d+
+# delete event
+h_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: HPlatformBundle:Event:delete
+    requirements:
+        id: \d+
