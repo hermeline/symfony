@@ -1,0 +1,30 @@
+H\PlatformBundle\Entity\Evenement:
+    type: entity
+    table: null
+    repositoryClass: H\PlatformBundle\Repository\EvenementRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+        description:
+            type: string
+            length: 255
+        date:
+            type: datetime
+        lieu:
+            type: string
+            length: 255
+        image:
+            type: string
+            length: 255
+            unique: true
+        idUsers:
+            type: integer
+            column: id_users
+    lifecycleCallbacks: {  }
