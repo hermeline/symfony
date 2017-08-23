@@ -19,7 +19,7 @@ class EvenementType extends AbstractType
         ->add('description')
         ->add('date')
         ->add('lieu')
-        ->add('image', FileType::class);
+        ->add('image', FileType::class, array('data_class' => null));
     }
 
     /**
