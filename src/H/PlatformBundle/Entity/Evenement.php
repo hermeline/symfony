@@ -2,6 +2,7 @@
 
 namespace H\PlatformBundle\Entity;
 
+
 /**
  * Evenement
  */
@@ -37,10 +38,6 @@ class Evenement
      */
     private $image;
 
-    /**
-     * @var int
-     */
-    private $idUsers;
 
 
     /**
@@ -159,7 +156,7 @@ class Evenement
     public function setImage($image)
     {
         $this->image = $image;
-
+        
         return $this;
     }
 
@@ -173,28 +170,5 @@ class Evenement
         return $this->image;
     }
 
-    /**
-     * Set idUsers
-     *
-     * @param integer $idUsers
-     *
-     * @return Evenement
-     */
-    public function setIdUsers($idUsers)
-    {
-        $this->idUsers = $idUsers;
 
-        return $this;
-    }
-
-    /**
-     * Get idUsers
-     *
-     * @return int
-     */
-    public function getIdUsers()
-    {
-        return $this->idUsers;
-    }
 }
-

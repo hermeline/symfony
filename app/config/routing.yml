@@ -1,3 +1,6 @@
 h_platform:
     resource: "@HPlatformBundle/Resources/config/routing.yml"
     prefix:   /platform
+h_platform_evenement:
+    resource: "@HPlatformBundle/Resources/config/routing/evenement.yml"
+    prefix:   /evenement

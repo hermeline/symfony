@@ -1,7 +1,7 @@
-H\PlatformBundle\Entity\Evenement:
+H\PlatformBundle\Entity\Image:
     type: entity
     table: null
-    repositoryClass: H\PlatformBundle\Repository\EvenementRepository
+    repositoryClass: H\PlatformBundle\Repository\ImageRepository
     id:
         id:
             type: integer
@@ -9,18 +9,11 @@ H\PlatformBundle\Entity\Evenement:
             generator:
                 strategy: AUTO
     fields:
-        title:
+        name:
             type: string
             length: 255
-        description:
-            type: string
-            length: 255
-        date:
-            type: datetime
-        lieu:
-            type: string
-            length: 255
-        image:
+            unique: true
+        path:
             type: string
             length: 255
             unique: true
